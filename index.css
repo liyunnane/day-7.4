@@ -1,0 +1,435 @@
+*{
+	padding:0;
+	height: 0;
+	list-style: none;
+}
+body{
+	font-family: '微软雅黑';
+}
+a{
+	text-decoration: none;
+}
+.play .bottom .mini-player{
+	float: left;
+	width:541px;
+	height: 100%;
+	background: #000;
+	margin-bottom: 5px;
+}
+.play .jindu{
+	width:541px;
+	height: 10px;
+	background: #2C4838;
+	position: absolute;
+	bottom:0;
+}
+.play .jindu .yuandian{
+	width:12px;
+	height: 12px;
+	background: green;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:-5px;
+	cursor: pointer;
+}
+
+.play .bottom .mini-player-right{
+	width:22px;
+	height: 115px;
+	background: url(img/player_bg.png);
+	background-position:0px 0; 
+	float: left;
+}
+.play .bottom::after{
+	content:'';
+	display: block;
+	clear:both;
+}
+
+.play .bottom{
+	width:563px;
+	height:115px;
+	left:0;
+	right:0;
+	margin:auto;
+	position: fixed;
+	background: green;
+	margin-bottom: 5px;
+	
+}
+.play .play-list{
+	width:541px;
+	height:407px;
+	bottom:115px;
+	background: #1B1B1B;
+	margin:auto;
+
+}
+.play .play-list .title{
+    width:100%;
+    height: 52px;
+    background: #000;
+    line-height: 52px;
+    position: relative;
+}
+.play .play-list .title .clear{
+	color:#999;
+	font-size: 12px;
+	float: right;
+	margin-right: 32px;
+}
+.play .play-list .title .clearimg{
+	width:20px;
+	height:20px;
+	background: url(img/player_bg.png);
+	background-position: -269px -97px;
+	position: absolute;
+	top:3px;
+	right:3px;
+}
+.play .play-list .title .palying-list{
+	width:112px;
+	height:52px;
+	background: #262626;
+	float: left;
+	position: relative;
+}
+.play .play-list .title .palying-list .threeangle{
+	width:15px;
+	height:8px;
+	position: absolute;
+	bottom:-8px;
+	left: 0;
+	right:0;
+	margin:auto;
+	background: url(img/player_bg.png);
+	background-position: -504px -28px;
+}
+.play .play-list .title .palying-list .wenzi{
+	width:72px;
+	height:52px;
+	padding:0 20px ;
+	text-align: center;
+	color: #fff;
+	line-height: 52px;
+	font-size:18px; 
+}
+.play .play-list .content{
+	margin-top: 8px;
+	width:100%;
+}
+.play .play-list .content .line{
+	height:24px;
+	width:100%;
+	margin:2px 0 3px;
+	color:#999;
+	position: relative;
+}
+.play .play-list .content .line .opration{
+	width:97px;
+	height:15px;
+	background: #000;
+	position: absolute;
+	padding:4.5px 0;
+	right:0;
+	top:0;
+	display: none;
+}
+.play .play-list .content .line:hover .opration{
+	display: block;
+}
+.play .play-list .content .line .opration .xin{
+	width:16px;
+	height: 15px;
+	background:url(img/player_bg.png);
+	background-position: 0 -127px; 
+	float: left;
+}
+.play .play-list .content .line .opration .xin:hover{
+	background-position: 0 -145px;
+}
+.play .play-list .content .line .opration .jiantou{
+	width:16px;
+	height: 15px;
+	background:url(img/player_bg.png);
+	margin-left: 5px;
+	background-position: -16px -127px;
+	float: left; 
+}
+.play .play-list .content .line .opration .jiantou:hover{
+	background-position: -16px -145px;
+
+}
+.play .play-list .content .line .opration .xing{
+	width:16px;
+	height: 15px;
+	background:url(img/player_bg.png);
+	margin-left: 5px;
+	background-position: -62px -127px;
+	float: left; 
+}
+.play .play-list .content .line .opration .xing:hover{
+	background-position: -62px -145px;
+}
+.play .play-list .content .line .opration .shanchu{
+	width:16px;
+	height: 15px;
+	background:url(img/player_bg.png);
+	margin-left: 5px;
+	background-position: -46px -127px;
+	float: left; 
+}
+.play .play-list .content .line .opration .shanchu:hover{
+	background-position: -46px -145px;
+}
+
+.play .play-list .content .line:hover{
+	background: #000;
+	color:#fff;
+	width:97%;
+}
+.play .play-list .content .line .sing-name{
+	width:40%;
+	height: 100%;
+	text-align: left;
+	line-height: 24px;
+	padding-left: 21px;
+	font-size: 12px;
+	float: left;
+}
+.play .play-list .content .line:hover .sing-name{
+	width:41.7%;
+}
+
+.play .play-list .content .line .sing-zuozhe{
+	width:25%;
+	height: 100%;
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	float: left;
+}
+.play .play-list .content .line .sing-time{
+	width:25%;
+	height: 100%;
+	text-align: right;
+	line-height: 24px;
+	font-size: 12px;
+	float: left;
+}
+.play .bottom .mini-player .imgs{
+	width:90px;
+	height: 90px;
+	margin:10px;
+}
+.play .bottom .mini-player .imgs img{
+	width:90px;
+	height: 90px;
+}
+.play .bottom .mini-player .single{
+	position: absolute;
+	left: 110px;
+	top:0;
+	width:300px;
+	height:100px;
+}
+.play .bottom .mini-player .single .mylikes{
+	width:100px;
+	height:20px;
+	font-size: 12px;
+	color:#fff;
+	font-family: tahoma;
+	margin: 5px 0;
+	line-height: 1.5em;
+}
+.play .bottom .mini-player .single .qqmusic{
+	width:100px;
+	height:20px;
+	line-height: 20px;
+	color:#828282;
+	font-size: 12px;
+	font-family: tahoma;
+}
+.play .bottom .mini-player .single .diantai{
+	width:75px;
+	height: 20px;
+	background: url(img/player_bg.png);
+	background-position: -453px -55px; 
+	position: absolute;
+	top:5px;
+	left:95px;
+}
+.play .bottom  .mini-player-top{
+	width:100px;
+	height:28px;
+	position: absolute;
+	top:0;
+	right:0;
+}
+.play .bottom .mini-player-top .mulu{
+	background: url(img/player_bg.png);
+	width:47px;
+	height: 28px;
+	background-position: -222px -97px;
+	float: left;
+	position: relative;
+}
+.play .bottom .mini-player-top .mulu .number{
+	width:24px;
+	height: 28px;
+	position: absolute;
+	color:#fff;
+	font-size: 16px;
+	right:0;
+	top:0;
+	text-align: center;
+	line-height: 28px;
+
+}
+
+.play .bottom .mini-player-top .ci{
+	width:28px;
+	height:28px;
+	background: url(img/player_bg.png);
+	background-position: -445px 0px;
+	float: left;
+	margin-top: 7px;
+}
+.play .bottom .qiehuan{
+	width: 280px;
+    height: 80px;
+    position: absolute;
+    right: 44px;
+    bottom: 22px;
+    line-height: 68px;
+}
+.play .bottom .qiehuan .left{
+	display: inline-block;
+	width:35px;
+	height: 30px;
+	background: url(img/player_bg.png);
+	background-position: -69px 0px;
+	vertical-align: middle;
+
+}
+.play .bottom .qiehuan .left:hover{
+	background-position: -69px -32px;
+}
+.play .bottom .qiehuan .pause{
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background: url(img/player_bg.png);
+	background-position: -104px 0px;
+	vertical-align: middle;
+}
+.play .bottom .qiehuan .pause.kaishi{
+	background-position: -289px -88px;
+}
+.play .bottom .qiehuan .pause.kaishi:hover{
+	background-position: -331px -88px;
+}
+.play .bottom .qiehuan .pause:hover{
+	background-position: -104px -42px;
+}
+.play .bottom .qiehuan .right{
+	display: inline-block;
+	width:35px;
+	height: 30px;
+	background: url(img/player_bg.png);
+	background-position: -147px 0px;
+	vertical-align: middle;	
+}
+.play .bottom .qiehuan .right:hover{
+	background-position: -147px -32px;
+}
+.play .bottom .qiehuan .xunhuan{
+	display: inline-block;
+	width:35px;
+	height: 30px;
+	background: url(img/player_bg.png);
+	background-position: -219px 0px;
+	vertical-align: middle;	
+}
+.play .bottom .qiehuan .xunhuan:hover{
+	background-position: -219px -32px;
+
+}
+.play .bottom .qiehuan .viounce{
+	display: inline-block;
+	width:35px;
+	height: 30px;
+	background: url(img/player_bg.png);
+	background-position: -184px 0px;
+	vertical-align: middle;	
+}
+.play .bottom .qiehuan .viounce:hover{
+	background-position: -184px -32px;
+
+}
+.play .bottom .qiehuan .viounce.mune{
+	background-position: -147px -60px;
+}
+.play .bottom .qiehuan .viounce.mune:hover{
+	background-position: -184px -60px;
+}
+.play .bottom .qiehuan .lines{
+	display: inline-block;
+	width:72px;
+	height: 3px;
+	background: url(img/player_bg.png);
+	background-position: -291px -15px;
+	vertical-align: middle;	
+	position: relative;
+}
+.play .bottom .qiehuan .lines2{
+	display: inline-block;
+	position: absolute;
+	width:47px;
+	height: 3px;
+	background: url(img/player_bg.png);
+	background-position: -291px -4px;
+	vertical-align: middle;	
+	left:0px;
+	top:0px;
+}
+.play .bottom .qiehuan .lines2.white{
+	background-position: -291px -26px;
+
+}
+
+.play .bottom .qiehuan .yuan{
+	width:8px;
+	height: 9px;
+	background: url(img/player_bg.png);
+	background-position: -365px -1px;
+	vertical-align: middle;	
+	position: absolute;
+	top:-3px;
+	left:41px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.play .bottom .qiehuan .yuan.white{
+	background-position: -365px -17px;
+}
+.play .bottom .mini-playerright{
+	width:22px;
+	height: 115px;
+	background: url(img/player_bg.png);
+	background-position:0px 0; 
+	float: left;
+}
+.tishide{
+	width:50px;
+	height: 20px;
+	background: green;
+	position: absolute;
+	top:-22px;
+	left: 0px;
+	z-index: 1111;
+text-align:center;
+display: none;
+}
+
